@@ -74,15 +74,8 @@ goal = 'M'
 for i in range(100000):
     bfs(start, goal)
 
-print("BFS")
 bfs_path, bfs_nodes = bfs(start, goal)
+
+print("BFS")
 print("Path:", " -> ".join(bfs_path))
 print("Nodes Expanded:", bfs_nodes)
-
-for i in range(100000):
-    dfs(start, goal)
-
-print("\nDFS")
-dfs_path, dfs_nodes = dfs(start, goal)
-print("Path:", " -> ".join(dfs_path))
-print("Nodes Expanded:", dfs_nodes)

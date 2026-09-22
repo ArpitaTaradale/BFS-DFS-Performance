@@ -1,5 +1,3 @@
-from collections import deque
-
 graph = {
     'A': ['B', 'C', 'D'],
     'B': ['E', 'F'],
@@ -17,31 +15,6 @@ graph = {
     'N': [],
     'O': []
 }
-
-def bfs(start, goal):
-    queue = deque([[start]])
-    visited = set()
-    nodes_expanded = 0
-
-    while queue:
-        path = queue.popleft()
-        node = path[-1]
-
-        if node in visited:
-            continue
-
-        visited.add(node)
-        nodes_expanded += 1
-
-        if node == goal:
-            return path, nodes_expanded
-
-        for neighbor in graph[node]:
-            if neighbor not in visited:
-                queue.append(path + [neighbor])
-
-    return None, nodes_expanded
-
 
 def dfs(start, goal):
     stack = [[start]]
@@ -72,17 +45,10 @@ start = 'A'
 goal = 'M'
 
 for i in range(100000):
-    bfs(start, goal)
-
-print("BFS")
-bfs_path, bfs_nodes = bfs(start, goal)
-print("Path:", " -> ".join(bfs_path))
-print("Nodes Expanded:", bfs_nodes)
-
-for i in range(100000):
     dfs(start, goal)
 
-print("\nDFS")
 dfs_path, dfs_nodes = dfs(start, goal)
+
+print("DFS")
 print("Path:", " -> ".join(dfs_path))
 print("Nodes Expanded:", dfs_nodes)
