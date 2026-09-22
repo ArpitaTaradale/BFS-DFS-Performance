@@ -1,0 +1,73 @@
+# AI Contribution Log
+
+## Project
+
+BFS vs DFS Performance Analysis
+
+## AI Tool Used
+
+ChatGPT
+
+## Purpose of AI Assistance
+
+AI was used as a learning and development assistance tool during the project.
+
+## AI Contributions
+
+1. Explained the concepts of Breadth-First Search (BFS) and Depth-First Search (DFS).
+2. Helped structure the BFS and DFS programs.
+3. Helped create a suitable 15-node graph for the experiment.
+4. Explained how to count expanded nodes.
+5. Explained the use of the py-spy profiling tool.
+6. Helped prepare the py-spy commands for BFS and DFS.
+7. Helped prepare the profiling program for measuring execution time.
+8. Helped organize the profiling results into a comparison table.
+9. Helped explain the obtained results.
+10. Helped structure the SLE-2 report and README file.
+
+## Work Performed by Student
+
+1. Created the GitHub repository.
+2. Created and modified the Python files.
+3. Implemented and ran the BFS and DFS programs.
+4. Created the 15-node graph.
+5. Installed py-spy.
+6. Executed the BFS and DFS programs.
+7. Ran the profiling commands.
+8. Generated bfs_profile.svg.
+9. Generated dfs_profile.svg.
+10. Ran profiling.py to obtain the actual average execution times.
+11. Verified the paths and number of nodes expanded.
+12. Verified the py-spy samples and errors.
+13. Committed the project files using Git.
+14. Pushed the final project to GitHub.
+
+## Verified Results
+
+### BFS
+
+Path: A → D → I → M
+
+Nodes Expanded: 13
+
+Average Execution Time: 4.7723 × 10⁻⁶ seconds
+
+py-spy Samples: 8
+
+Errors: 0
+
+### DFS
+
+Path: A → D → I → M
+
+Nodes Expanded: 15
+
+Average Execution Time: 7.7606 × 10⁻⁶ seconds
+
+py-spy Samples: 7
+
+Errors: 0
+
+## Declaration
+
+AI was used for learning, coding guidance, profiling guidance, and documentation. The programs were executed by the student, and the reported performance results were obtained and verified from the student's execution environment.
