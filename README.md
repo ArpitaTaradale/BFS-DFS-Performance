@@ -20,6 +20,37 @@ The objectives of this project are:
 5. Use py-spy for profiling.
 6. Compare the performance using actual results.
 
+##Graph
+| Node  | Connected to |
+| ----- | ------------ |
+| **A** | B, C, D      |
+| **B** | E, F         |
+| **C** | G            |
+| **D** | H, I         |
+| **E** | J, K         |
+| **F** | —            |
+| **G** | L            |
+| **H** | —            |
+| **I** | M            |
+| **J** | N, O         |
+| **K** | —            |
+| **L** | —            |
+| **M** | —            |
+| **N** | —            |
+| **O** | —            |
+
+Graph structure 
+                    A
+                 /  |  \
+                B   C   D
+               / \  |  / \
+              E   F G H   I
+             / \    |     |
+            J   K    L     M
+           / \
+          N   O
+
+
 ## Problem Used
 
 A 15-node graph is used.
